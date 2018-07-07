@@ -31,7 +31,6 @@ public class PluginInstrumentation extends Instrumentation {
         }
         return super.newActivity(cl, className, intent);
     }
-    //这个方法居然是私有的？？？
     public ActivityResult execStartActivity(
             Context who, IBinder contextThread, IBinder token, Activity target,
             Intent intent, int requestCode, Bundle options) {
